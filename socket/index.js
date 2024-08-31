@@ -12,7 +12,7 @@ const app = express()
 const server = http.createServer(app)  
 const io = new Server(server,{ 
     cors : {
-        origin : process.env.FRONT_URL,
+        origin : "https://chattrial-tawny.vercel.app",
         credentials : true
     }
 })
