@@ -26,7 +26,7 @@ async function registerUser(request,response){
             id : userSave._id,
         }
 
-        const token = await jwt.sign(tokenData,process.env.JWT_SECREAT_KEY,{ expiresIn : '30d'}) 
+        const token = await jwt.sign(tokenData,process.env.JWT_SECREAT_KEY,{ expiresIn : '90d'}) 
 
         const cookieOptions = {
             http : true,
