@@ -7,7 +7,8 @@ const {app , server}  = require("./socket/index")
 const cookiesParser = require('cookie-parser')
 
 app.use( cors({
-    origin : process.env.FRONT_URL , 
+    origin : "https://chattrial-tawny.vercel.app" ,
+    methods: ['GET', 'POST'], 
     credentials : true
 }))
 app.use(express.json())  
